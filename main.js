@@ -24,13 +24,14 @@ let outVal = [];
 
 // при нажатии на кнопку значение будет заносится в массив для значений,
 // после чего при вызове функции с операциями значения из массива будут браться оттуда и выполняться операция а затем заноситься в новый массив на вывод
+// 
 
 btnOne.addEventListener('click', function(){
     let objOne = {
         valueOne : 1
     }
     valueArray.push(objOne);
-    displayOut()
+    displayOut(valueArray)
     
 });
 btnTwo.addEventListener('click', function(){
@@ -38,7 +39,7 @@ btnTwo.addEventListener('click', function(){
         valueTwo : 2
     }
     valueArray.push(objTwo);
-    displayOut()
+    displayOut(valueArray)
     
 });
 btnThree.addEventListener('click', function(){
@@ -46,7 +47,7 @@ btnThree.addEventListener('click', function(){
         valueThree : 3
     }
     valueArray.push(objThree);
-    displayOut()
+    displayOut(valueArray)
     
 });
 btnFour.addEventListener('click', function(){
@@ -54,7 +55,7 @@ btnFour.addEventListener('click', function(){
         valueFour : 4
     }
     valueArray.push(objFour);
-    displayOut()
+    displayOut(valueArray)
     
 });
 btnFive.addEventListener('click', function(){
@@ -62,7 +63,7 @@ btnFive.addEventListener('click', function(){
         valueFive : 5
     }
     valueArray.push(objFive);
-    displayOut()
+    displayOut(valueArray)
     
 });
 btnSix.addEventListener('click', function(){
@@ -70,7 +71,7 @@ btnSix.addEventListener('click', function(){
         valueSix : 6
     }
     valueArray.push(objSix);
-    displayOut()
+    displayOut(valueArray)
     
 });
 btnSeven.addEventListener('click', function(){
@@ -78,7 +79,7 @@ btnSeven.addEventListener('click', function(){
         valueSeven : 7
     }
     valueArray.push(objSeven);
-    displayOut()
+    displayOut(valueArray)
     
 });
 btnEight.addEventListener('click', function(){
@@ -86,7 +87,7 @@ btnEight.addEventListener('click', function(){
         valueEight : 8
     }
     valueArray.push(objEight);
-    displayOut()
+    displayOut(valueArray)
     
 });
 btnNine.addEventListener('click', function(){
@@ -94,7 +95,7 @@ btnNine.addEventListener('click', function(){
         valueNine : 9
     }
     valueArray.push(objNine);
-    displayOut()
+    displayOut(valueArray)
     
 });
 btnZero.addEventListener('click', function(){
@@ -102,7 +103,7 @@ btnZero.addEventListener('click', function(){
         valueZero : 0
     }
     valueArray.push(objZero);
-    displayOut()
+    displayOut(valueArray)
 
     console.log(displayOut(valueArray))
 });
@@ -117,11 +118,18 @@ function displayOut() {
         displayOut  += `
         <p>
         
-       ${item.outValue}
+       ${item}
         </p>
         `;
      //   outValue.innerHTML = displayOut;
     });
     
 }
+btnSum.addEventListener('click', function(){
+    let num1, num2, result;
+    num1 = valueArray;
+    num2 = valueArray;
+    result = num1 - - num2;
+    console.log(result);
+});
 
